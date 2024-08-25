@@ -191,6 +191,7 @@ footer p {
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    text-align: justify; /* Ensuring text-align is justify */
 }
 
 @media (max-width: 768px) {
