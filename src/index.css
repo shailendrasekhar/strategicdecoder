@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+    cursor: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbX9G_fAwM81seUFT8SkiRiHOtekPEkuI8HQ&shttps://img.itch.zone/aW1nLzE0MjU2NTQ4LnBuZw==/315x250%23c/%2BSWFL3.png'), auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem 0;
+    color: #ffffff;
+}
+
+a {
+    color: #d5ab00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header and footer */
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    background-image: url('https://danielleu.com/blog/wp-content/uploads/2016/11/DL_20161108_DSC3951-San-Francisco-Palace-of-Fine-Arts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+header::before, footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://danielleu.com/blog/wp-content/uploads/2016/11/DL_20161108_DSC3951-San-Francisco-Palace-of-Fine-Arts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.header-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    background-color: #000;
+}
+
+header h1, header h2 {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+section h2 {
+    border-bottom: 2px solid #d5ab00;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #000;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+}
+
+/* Resume */
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #d5ab00;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.download-button:hover {
+    background-color: #d5ab00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header, footer {
+        padding: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill {
+    flex: 1 1 calc(25% - 2rem);
+    max-width: 200px;
+    text-align: center;
+    background: #2c2c2c;
+    border: 1px solid #444; 
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.skill-logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: #e0e0e0; 
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+#about p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+}
+
+.about-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.about-logo {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
